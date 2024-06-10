@@ -1,0 +1,3 @@
+.laurel-filter{
+    filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(113deg) brightness(96%) contrast(101%);
+}

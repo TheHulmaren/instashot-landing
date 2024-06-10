@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <title>Instashot</title>
+  </head>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <body class="h-screen w-screen flex text-slate-100 bg-indigo-900">
+    <div class="mx-auto max-w-6xl bg-indigo-900 flex flex-col flex-grow">
+      <nav class="p-4 flex gap-16">
+        <div class="flex gap-4">
+          <img src="./img/logo.png" class="w-12" />
+          <h1 class="text-xl font-light self-center">
+            Insta<span class="font-bold text-indigo-300">shot</span>
+          </h1>
+        </div>
+        <ul
+          class="flex h-full items-center gap-16 hover:[&_a]:underline [&_a]:cursor-pointer [&_a]:underline-offset-4"
+        >
+          <a data-to="comparisonSection">Comparison</a>
+          <a data-to="howtoSection">How to use</a>
+          <a data-to="pricingSection">Pricing</a>
+          <a data-to="faqSection">FAQ</a>
+        </ul>
+      </nav>
+      <main class="flex flex-col p-4 mt-4 gap-24">
+        <!-- Intro banner -->
+        <div class="flex">
+          <div class="w-1/2 flex flex-col gap-8">
+            <div class="relative flex items-center justify-center w-fit h-fit">
+              <span class="absolute text-center text-xs"
+                >No.1 <br />Face Resemblance</span
+              >
+              <img src="./img/laurel.svg" class="w-40 laurel-filter" />
+            </div>
+            <h2 class="text-6xl font-bold">
+              Shoot your AI selfies,<br />
+              <span class="text-indigo-300">instantly.</span>
+            </h2>
+            <p>
+              Submit your photos, and get your first AI portraits with the
+              highest face resemblance
+              <span class="underline underline-offset-2"
+                >in less than 8 minutes.</span
+              >
+            </p>
+            <div class="flex flex-col gap-4">
+              <button
+              id="telegramButton"
+                class="w-fit p-4 hover:bg-[#24A1DE] text-indigo-200 font-bold flex items-center gap-2 border-[#24A1DE] border-4 rounded-lg transition ease-in-out duration-200"
+              >
+                <img src="./img/Telegram_logo.svg.webp" class="w-8 inline" />
+                Try on Telegram
+              </button>
+              <p class="font-semibold p-2 px-4 rounded-full bg-slate-800 w-fit">
+                🎁 <span class="text-yellow-300">Special offer</span> awaits you
+                until
+                <span class="py-1 px-2 bg-indigo-600 rounded-full"
+                  >July 4th</span
+                >
+              </p>
+            </div>
+            <p class="text-indigo-100">
+              So far, more than <span class="text-yellow-300">400+</span> cool
+              photos from <span class="text-yellow-300">25+</span> people have
+              been generated with
+              <span class="text-lg font-light self-center">
+                Insta<span class="font-bold text-indigo-300">shot</span>
+              </span>
+            </p>
+          </div>
+          <div class="w-1/2 flex flex-col">
+            <div class="w-full grid grid-rows-2 grid-cols-2 gap-4">
+              <div
+                id="introImg0"
+                class="aspect-square rounded-lg overflow-hidden flex gap-4 transform duration-500 ease-in-out"
+              ></div>
+              <div
+                id="introImg1"
+                class="aspect-square rounded-lg overflow-hidden flex gap-4 transform duration-500 ease-in-out"
+              ></div>
+              <div
+                id="introImg2"
+                class="aspect-square rounded-lg overflow-hidden flex gap-4 transform duration-500 ease-in-out"
+              ></div>
+              <div
+                class="aspect-square rounded-lg ring-4 ring-green-500 ring-offset-4 ring-offset-indigo-900 shadow-2xl shadow-green-500 overflow-hidden"
+              >
+                <div
+                  id="introImg3"
+                  class="aspect-square rounded-lg overflow-hidden bg-cover flex gap-4 transform duration-1000 ease-in-out"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Comparison -->
+        <div id="comparisonSection">
+          <div class="flex flex-col items-center gap-4 mb-16">
+            <h2 class="text-sm font-bold text-yellow-400">Comparison</h2>
+            <p class="text-4xl font-bold mt-4 text-center">
+              Faster, cheaper, and more flexible.<br>
+              The best AI portrait generator is here!
+            </p>
+          </div>
+          <div class="relative rounded-lg">
+            <div
+              class="absolute top-0 left-0 w-full h-full overflow-hidden rounded-lg"
+            >
+              <img
+                src="./img/comparison.webp"
+                class="w-full h-full object-cover blur-3xl opacity-50"
+              />
+            </div>
+            <div
+              class="absolute flex flex-col gap-6 p-4 h-full w-48 ml-[300px] backdrop-blur-md scale-110 bg-green-800 bg-opacity-30 z-10 rounded-lg shadow-lg shadow-green-400"
+            ></div>
+            <table
+              class="table-fixed w-full [&_th]:font-light [&_tr:nth-child(n+2)_td]:text-slate-300 [&_tr:nth-child(n+2)_td:nth-child(2)]:text-green-400 [&_tr:nth-child(n+2)_td:nth-child(2)]:font-bold [&_th]:py-4 [&_th]:text-nowrap [&_td]:px-8 [&_td:not(:last-child)]:border-yellow-700 relative z-10"
+            >
+              <tbody>
+                <tr>
+                  <th class="w-1/4 text-start px-4">🌎 Services</th>
+                  <td>
+                    <span class="relative text-lg font-light self-center z-30">
+                      Insta<span class="font-bold text-indigo-300">shot</span>
+                    </span>
+                  </td>
+                  <td>A**</td>
+                  <td>I**</td>
+                  <td>S**</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">💻 Prompting</th>
+                  <td>Yes</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">⏳ Image Generation (on avg.)</th>
+                  <td>Just 1 min</td>
+                  <td>1 hour</td>
+                  <td>1.5 hour</td>
+                  <td>24 hours</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">👚 Variability</th>
+                  <td>Unlimited</td>
+                  <td>5 outfits</td>
+                  <td>5-10 styles</td>
+                  <td>2-10 styles</td>
+                </tr>
+                <tr>
+                  <th class="text-start px-4">💰 Pricing (per 100 pics)</th>
+                  <td>$12</td>
+                  <td>$175</td>
+                  <td>$97.5</td>
+                  <td>$10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- How-to -->
+        <div id="howtoSection">
+          <div class="flex flex-col items-center gap-4 mb-16">
+            <h2 class="text-sm font-bold text-yellow-400">How to use</h2>
+            <p class="text-4xl font-bold mt-4 text-center">
+              Whole different you in just 4 steps.<br>
+              Are you ready?
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="flex flex-col gap-4">
+              <div
+                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+              >
+                <div
+                  style="background-image: url(./img/howto.webp)"
+                  class="absolute w-full h-full blur-lg"
+                ></div>
+                <div class="relative h-full p-8">
+                  <div
+                    style="background-image: url(./img/how-to/how0.jpeg)"
+                    class="h-full bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold">0. Tell us who you are</h3>
+              <p class="text-indigo-100 text-slate-300">
+                We need to know a bit about you to get started. Tell us your
+                race and gender category.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div
+                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+              >
+                <div
+                  style="background-image: url(./img/howto.webp)"
+                  class="absolute w-full h-full blur-lg"
+                ></div>
+                <div class="relative h-full p-8">
+                  <div
+                    style="background-image: url(./img/how-to/how1.jpeg)"
+                    class="h-full bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold">1. Stage your photos</h3>
+              <p class="text-indigo-100 text-slate-300">
+                Submit your photos to train your AI model. You can submit up to
+                24 photos of yourself.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div
+                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+              >
+                <div
+                  style="background-image: url(./img/howto.webp)"
+                  class="absolute w-full h-full blur-lg"
+                ></div>
+                <div class="relative h-full p-8">
+                  <div
+                    style="background-image: url(./img/how-to/how2.jpeg)"
+                    class="h-full bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold">2. Train your AI model</h3>
+              <p class="text-indigo-100 text-slate-300">
+                With your staged photos, we will train your AI model. It will
+                take less than 8 minutes.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div
+                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+              >
+                <div
+                  style="background-image: url(./img/howto.webp)"
+                  class="absolute w-full h-full blur-lg"
+                ></div>
+                <div class="relative h-full p-8">
+                  <div
+                    style="background-image: url(./img/how-to/how3.jpeg)"
+                    class="h-full bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+              </div>
+              <h3 class="text-2xl font-bold">
+                3. Generate your photos with prompt
+              </h3>
+              <p class="text-indigo-100 text-slate-300">
+                Generate your photos with prompt. Four photos will be generated
+                at once. It will take less than 1-2 minute, depending on the
+                server load.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- pricing -->
+        <div id="pricingSection">
+          <div class="flex flex-col items-center gap-4 mb-16">
+            <h2 class="text-sm font-bold text-yellow-400">Pricing</h2>
+            <p class="text-4xl font-bold mt-4 text-center">
+              We got you covered.<br>
+              Choose one that fits you the best.
+            </p>
+          </div>
+          <div class="flex gap-6 w-full justify-center">
+            <div class="relative w-1/3 overflow-hidden rounded-lg  border-2 border-slate-500">
+              <img
+                src="./img/comparison.webp"
+                class="absolute w-full h-full blur-3xl z-10"
+              />
+              <div class="relative w-full p-4 flex flex-col gap-4 z-20">
+                <h3 class="font-semibold">Starter</h3>
+                <h4 class="text-5xl font-bold">$8</h4>
+                <span>🚫 No prompting</span>
+                <span>📸 300 monthly quota</span>
+              </div>
+            </div>
+            <div class="relative w-1/3 overflow-hidden rounded-lg shadow-xl shadow-yellow-700 border-2 border-yellow-500">
+              <img
+                src="./img/comparison.webp"
+                class="absolute w-full h-full blur-3xl z-10"
+              />
+              <div class="relative w-full p-4 flex flex-col gap-4 z-20">
+                <div class="flex items-center">
+                  <h3 class="font-semibold">Essential</h3>
+                  <span class="ml-2 bg-yellow-400 text-xs font-semibold rounded-full text-indigo-950 py-1 px-2">Popular</span>
+                </div>
+                <h4 class="text-5xl font-bold">$14</h4>
+                <span>✅ Prompting enabled</span>
+                <span>📸 600 monthly quota</span>
+              </div>
+            </div>
+            <div class="relative w-1/3 overflow-hidden rounded-lg border-2 border-purple-600">
+              <img
+                src="./img/comparison.webp"
+                class="absolute w-full h-full blur-3xl z-10"
+              />
+              <div class="relative w-full p-4 flex flex-col gap-4 z-20">
+                <h3 class="font-semibold">Premium</h3>
+                <h4 class="text-5xl font-bold">$24</h4>
+                <span>✅ Prompting enabled</span>
+                <span>📸 1200 monthly quota</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ -->
+        <div id="faqSection" class="flex gap-4">
+          <div class="w-1/2">
+            <h2 class="text-4xl font-bold mb-4">FAQ</h2>
+            <p>
+              If you have more questions to ask,
+              <a
+                class="underline underline-offset-2"
+                href="https://x.com/leek531"
+                >DM a developer in 𝕏</a
+              >
+            </p>
+          </div>
+          <div class="w-1/2 flex flex-col">
+            <div id="faq0" data-faq-index="0">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >How does Instashot work?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                We use AI technologies to generate portraits that best describes
+                you. To get started, you need to submit your photos up to 24
+                pics. Then we will train your custom AI model based on your
+                photos. You can generate your photos with the model.
+              </p>
+            </div>
+            <div id="faq1" data-faq-index="1">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >How long does it take to get photos?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                It will take about 7 minutes to train your AI model. Image
+                generation takes 1 minute on average. For first time users, it
+                will take about 8 (=7+1) minutes to get your first AI portraits.
+                <br /><br />
+                Once you have your AI model trained, you can generate your
+                photos with existing model in just 1 minute.
+              </p>
+            </div>
+            <div id="faq2" data-faq-index="2">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold">Can I prompt?</span>
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                Yes, you can prompt when generating your photos.<br /><br />
+                For Telegram users, type your prompt after /imagine command, and
+                your photos will be generated based on the prompt.<br /><br />
+                Make sure to keep your prompt appropriate. Malicious, NSFW or
+                abusive prompts are not welcomed and may result in a ban.
+              </p>
+            </div>
+            <div id="faq3" data-faq-index="3">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >What is the resolution of photos?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                Currently, the photos are generated in 512x768 portrait
+                resolution. We are considering adding more resolution options in
+                the future.
+              </p>
+            </div>
+            <div id="faq4" data-faq-index="4">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold">Can I get refunds?</span>
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                Yes, you can get refunds any time. But please note that refunds
+                are only available for unused monthly quota.<br /><br />
+                Once you have used all your monthly quota, you cannot get
+                refunds. Cancel your subscription first to get refunds.
+              </p>
+            </div>
+            <div id="faq5" data-faq-index="5">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >How do I cancel my subscription?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                You can cancel your monthly subscription at any time.
+                <br /><br />
+                For Telegram users, type /cancelsubscription command to cancel
+                your subscription.
+              </p>
+            </div>
+            <div id="faq6" data-faq-index="6">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >How can I report an error?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                If you encounter an error, please
+                <a
+                  class="underline underline-offset-2"
+                  href="https://x.com/leek531"
+                  >DM a developer on 𝕏</a
+                >. <br /><br />
+                For Telegram users, type /support command to contact our support
+                team.
+              </p>
+            </div>
+            <div id="faq7" data-faq-index="7">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >Who is behind Instashot?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                Instashot is developed and maintained solely by one person,
+                <a
+                  class="underline underline-offset-2"
+                  href="https://x.com/leek531"
+                >
+                  a founder himself.</a
+                >
+                <br /><br />
+                If you have any questions or feedback, please feel free to
+                contact me on 𝕏.
+              </p>
+            </div>
+            <div id="faq8" data-faq-index="8">
+              <div
+                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+              >
+                <span class="text-lg font-semibold"
+                  >Can I use photo of others?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    id="faqPlusStick"
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-indigo-100 h-0 overflow-hidden">
+                While we do not restrict you from using photos of others, we
+                recommend you to use your own photos.
+                <br /><br />
+                Any problems or issues caused by using photos of others are your
+                responsibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="w-full p-4 mt-8 flex justify-between">
+        <div class="flex gap-4">
+          <img src="./img/logo.png" class="w-10" />
+          <h1 class="text-xl font-light self-center">
+            Insta<span class="font-bold text-indigo-300">shot</span>
+          </h1>
+        </div>
+        <p class="text-sm text-end">
+          © 2024 Instashot. All rights reserved. <br />
+          Contact: 
+          <a class="underline underline-offset-2" href="https://x.com/leek531"
+            >Gyumin Lee</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    const imgSets = [
+      {
+        orig: [
+          "./img/intro/intro3.jpg",
+          "./img/intro/intro4.jpg",
+          "./img/intro/intro5.jpg",
+        ],
+        gen: "./img/intro/intro1.jpg",
+      },
+      {
+        orig: [
+          "./img/intro/intro0.jpg",
+          "./img/intro/intro7.jpg",
+          "./img/intro/intro8.jpg",
+        ],
+        gen: "./img/intro/intro6.jpg",
+      },
+      {
+        orig: [
+          "./img/intro/intro9.jpg",
+          "./img/intro/intro10.jpg",
+          "./img/intro/intro11.jpg",
+        ],
+        gen: "./img/intro/intro12.jpg",
+      },
+    ];
+
+    const fillIntroImages = () => {
+      for (let i = 0; i < 3; i++) {
+        var new_imgs = [];
+        for (let j = 0; j < imgSets.length; j++) {
+          new_div = $(
+            `<div class="h-full aspect-square bg-cover rounded-lg"></div>`
+          );
+          new_div.css("background-image", `url(${imgSets[j].orig[i]})`);
+          new_imgs.push(new_div);
+        }
+        // infinite loop buffer
+        new_imgs.push(
+          $(`<div class="h-full aspect-square bg-cover rounded-lg"></div>`).css(
+            "background-image",
+            `url(${imgSets[0].orig[i]})`
+          )
+        );
+        $(`#introImg${i}`).append(new_imgs);
+      }
+    };
+
+    const swipeIntroImages = (idx) => {
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+          $(`#introImg${i}`).css("transform", "scale(0.87)");
+          if (idx == 0) {
+            $(`#introImg${i}`)
+              .animate(
+                {
+                  scrollLeft:
+                    ($(`#introImg${i}`).height() + 16) * imgSets.length,
+                },
+                1000
+              )
+              .promise()
+              .done(() => {
+                $(`#introImg${i}`).scrollLeft(0);
+              });
+          } else {
+            $(`#introImg${i}`).animate(
+              {
+                scrollLeft: ($(`#introImg${i}`).height() + 16) * idx,
+              },
+              1000
+            );
+          }
+          setTimeout(() => {
+            $(`#introImg${i}`).css("transform", "scale(1.0)");
+          }, 500);
+        }, 100 * i);
+      }
+    };
+
+    const updateIntroGenImage = (idx) => {
+      $("#introImg3").css("filter", `blur(24px)`);
+      setTimeout(() => {
+        $("#introImg3").css("background-image", `url(${imgSets[idx].gen})`);
+      }, 1000);
+      setTimeout(() => {
+        $("#introImg3").css("filter", `blur(0px)`);
+      }, 1000);
+    };
+
+    const recursiveIntroUpdate = (idx) => {
+      swipeIntroImages(idx);
+      setTimeout(() => {
+        updateIntroGenImage(idx);
+      }, 1500);
+      setTimeout(() => {
+        recursiveIntroUpdate((idx + 1) % imgSets.length);
+      }, 5000);
+    };
+
+    $("#introImg3").css("background-image", `url(${imgSets[0].gen})`);
+    fillIntroImages();
+    recursiveIntroUpdate(1);
+
+    const addFaqClickEvent = () => {
+      $("[data-faq-index]").click(function () {
+        const idx = $(this).data("faq-index");
+        const target = $(`#faq${idx} p`);
+        if (target.height() == 0) {
+          target.css("height", "auto");
+          const height = target.height();
+          target.css("height", "0");
+          target.animate({ height: height }, 500);
+        } else {
+          target.animate({ height: 0 }, 500);
+        }
+      });
+
+      // toggle + and -
+      $("[data-faq-index]").click(function () {
+        const idx = $(this).data("faq-index");
+        $("[data-faq-index]").each(function () {
+          if ($(this).data("faq-index") == idx) {
+            const target = $(`#faq${$(this).data("faq-index")} #faqPlusStick`);
+            if (target.css("transform") == "matrix(0, 1, -1, 0, 0, 0)") {
+              target.css("transform", "rotate(0deg)");
+            } else {
+              target.css("transform", "rotate(90deg)");
+            }
+          } else {
+            const target = $(`#faq${$(this).data("faq-index")} #faqPlusStick`);
+            target.css("transform", "rotate(90deg)");
+          }
+        });
+      });
+
+      // close other faq
+      $("[data-faq-index]").click(function () {
+        const idx = $(this).data("faq-index");
+        $("[data-faq-index]").each(function () {
+          if ($(this).data("faq-index") != idx) {
+            const target = $(`#faq${$(this).data("faq-index")} p`);
+            target.animate({ height: 0 }, 500);
+          }
+        });
+      });
+    };
+
+    addFaqClickEvent();
+
+    $("#telegramButton").click(() => {
+      //alert
+      alert("Service is not yet ready. Please wait for release.");
+    });
+
+    //nav bar click event
+    $("nav a").click(function () {
+      const target = $(this).data("to");
+      const offset = $(`#${target}`).offset().top;
+      $("html, body").animate({ scrollTop: offset }, 800);
+    });
+  </script>
+</html>
