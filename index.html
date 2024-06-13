@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/output.css" rel="stylesheet" />
     <title>Instashot</title>
@@ -54,7 +54,7 @@
             </p>
             <div class="flex flex-col gap-4">
               <button
-              id="telegramButton"
+                id="telegramButton"
                 class="w-fit p-4 hover:bg-[#24A1DE] text-indigo-200 font-bold flex items-center gap-2 border-[#24A1DE] border-4 rounded-lg transition ease-in-out duration-200"
               >
                 <img src="./img/Telegram_logo.svg.webp" class="w-8 inline" />
@@ -107,7 +107,7 @@
           <div class="flex flex-col items-center gap-4 mb-16">
             <h2 class="text-sm font-bold text-yellow-400">Comparison</h2>
             <p class="text-4xl font-bold mt-4 text-center">
-              Faster, cheaper, and more flexible.<br>
+              Faster, cheaper, and more flexible.<br />
               The best AI portrait generator is here!
             </p>
           </div>
@@ -175,7 +175,7 @@
           <div class="flex flex-col items-center gap-4 mb-16">
             <h2 class="text-sm font-bold text-yellow-400">How to use</h2>
             <p class="text-4xl font-bold mt-4 text-center">
-              Whole different you in just 4 steps.<br>
+              Whole different you in just 4 steps.<br />
               Are you ready?
             </p>
           </div>
@@ -196,7 +196,7 @@
                 </div>
               </div>
               <h3 class="text-2xl font-bold">0. Tell us who you are</h3>
-              <p class="text-indigo-100 text-slate-300">
+              <p class="text-slate-300">
                 We need to know a bit about you to get started. Tell us your
                 race and gender category.
               </p>
@@ -217,7 +217,7 @@
                 </div>
               </div>
               <h3 class="text-2xl font-bold">1. Stage your photos</h3>
-              <p class="text-indigo-100 text-slate-300">
+              <p class="text-slate-300">
                 Submit your photos to train your AI model. You can submit up to
                 24 photos of yourself.
               </p>
@@ -238,7 +238,7 @@
                 </div>
               </div>
               <h3 class="text-2xl font-bold">2. Train your AI model</h3>
-              <p class="text-indigo-100 text-slate-300">
+              <p class="text-slate-300">
                 With your staged photos, we will train your AI model. It will
                 take less than 8 minutes.
               </p>
@@ -261,7 +261,7 @@
               <h3 class="text-2xl font-bold">
                 3. Generate your photos with prompt
               </h3>
-              <p class="text-indigo-100 text-slate-300">
+              <p class="text-slate-300">
                 Generate your photos with prompt. Four photos will be generated
                 at once. It will take less than 1-2 minute, depending on the
                 server load.
@@ -274,48 +274,146 @@
           <div class="flex flex-col items-center gap-4 mb-16">
             <h2 class="text-sm font-bold text-yellow-400">Pricing</h2>
             <p class="text-4xl font-bold mt-4 text-center">
-              We got you covered.<br>
+              We got you covered.<br />
               Choose one that fits you the best.
             </p>
           </div>
           <div class="flex gap-6 w-full justify-center">
-            <div class="relative w-1/3 overflow-hidden rounded-lg  border-2 border-slate-500">
-              <img
-                src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10"
-              />
-              <div class="relative w-full p-4 flex flex-col gap-4 z-20">
+            <div
+              class="relative w-1/3 overflow-hidden rounded-lg border-[0.5px] border-slate-500 hover:scale-105 transition duration-300 ease-in-out"
+            >
+              <div class="relative w-full p-8 flex flex-col gap-4 z-20">
                 <h3 class="font-semibold">Starter</h3>
-                <h4 class="text-5xl font-bold">$8</h4>
-                <span>🚫 No prompting</span>
-                <span>📸 300 monthly quota</span>
-              </div>
-            </div>
-            <div class="relative w-1/3 overflow-hidden rounded-lg shadow-xl shadow-yellow-700 border-2 border-yellow-500">
-              <img
-                src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10"
-              />
-              <div class="relative w-full p-4 flex flex-col gap-4 z-20">
-                <div class="flex items-center">
-                  <h3 class="font-semibold">Essential</h3>
-                  <span class="ml-2 bg-yellow-400 text-xs font-semibold rounded-full text-indigo-950 py-1 px-2">Popular</span>
+                <h4 class="text-5xl font-bold">
+                  $9<span class="ml-2 text-sm">per month</span>
+                </h4>
+                <button
+                  class="subscribe-button rounded-lg p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
+                >
+                  Subscribe now
+                </button>
+                <div class="flex flex-col gap-2">
+                  <span class="flex font-bold"
+                    ><img
+                      src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Take 200 AI portraits per month</span
+                  >
+                  <span class="flex font-bold"
+                    ><img
+                      src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Take up to 2 portraits at a time</span
+                  >
+                  <span class="flex text-slate-200"
+                    ><img
+                      src="img/google-icons/shuffle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Random photo generation</span
+                  >
                 </div>
-                <h4 class="text-5xl font-bold">$14</h4>
-                <span>✅ Prompting enabled</span>
-                <span>📸 600 monthly quota</span>
               </div>
             </div>
-            <div class="relative w-1/3 overflow-hidden rounded-lg border-2 border-purple-600">
+            <div
+              class="relative w-1/3 overflow-hidden rounded-lg shadow-lg shadow-yellow-700 border-[0.5px] border-yellow-500 hover:scale-105 transition duration-300 ease-in-out"
+            >
               <img
                 src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10"
+                class="absolute w-full h-full blur-3xl z-10 rotate-90 opacity-60"
               />
-              <div class="relative w-full p-4 flex flex-col gap-4 z-20">
-                <h3 class="font-semibold">Premium</h3>
-                <h4 class="text-5xl font-bold">$24</h4>
-                <span>✅ Prompting enabled</span>
-                <span>📸 1200 monthly quota</span>
+              <div
+                class="relative w-full p-8 flex flex-col gap-4 z-20 cursor-pointer"
+              >
+                <div class="flex items-center">
+                  <h3 class="font-bold">Essential</h3>
+                  <span
+                    class="ml-2 bg-yellow-400 text-xs font-semibold rounded-full text-indigo-950 py-1 px-2"
+                    >Good Choice</span
+                  >
+                </div>
+                <h4 class="text-5xl font-bold">
+                  $17<span class="ml-2 text-sm">per month</span>
+                </h4>
+                <button
+                  class="subscribe-button rounded-lg p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
+                >
+                  Subscribe now
+                </button>
+                <div class="flex flex-col gap-2">
+                  <span class="flex font-bold"
+                    ><img
+                      src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Take 400 AI portraits per month</span
+                  >
+                  <span class="flex font-bold"
+                    ><img
+                      src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Take up to 4 portraits at a time</span
+                  >
+                  <span class="flex text-slate-200"
+                    ><img
+                      src="img/google-icons/shuffle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Random photo generation</span
+                  >
+                  <span class="flex text-slate-200"
+                    ><img
+                      src="img/google-icons/keyboard_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Write your own prompt</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="relative w-1/3 overflow-hidden rounded-lg shadow-lg shadow-purple-700 border-[0.5px] border-purple-500 hover:scale-105 transition duration-300 ease-in-out"
+            >
+              <div class="relative w-full p-8 flex flex-col gap-4 z-20">
+                <div class="flex items-center">
+                  <h3 class="font-bold">Premium</h3>
+                </div>
+                <h4 class="text-5xl font-bold">
+                  $35<span class="ml-2 text-sm">per month</span>
+                </h4>
+                <button
+                  class="subscribe-button rounded-lg p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
+                >
+                  Subscribe now
+                </button>
+                <div class="flex flex-col gap-2">
+                  <span class="flex font-bold"
+                    ><img
+                      src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Take 800 AI portraits per month</span
+                  >
+                  <span class="flex font-bold"
+                    ><img
+                      src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Take up to 8 portraits at a time</span
+                  >
+                  <span class="flex text-slate-200"
+                    ><img
+                      src="img/google-icons/shuffle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Random photo generation</span
+                  >
+                  <span class="flex text-slate-200"
+                    ><img
+                      src="img/google-icons/keyboard_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Write your own prompt</span
+                  >
+                  <span class="flex text-slate-200"
+                    ><img
+                      src="img/google-icons/filter_alt_off_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+                      class="w-4 mr-1"
+                    />Unlock negative prompting</span
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -571,7 +669,7 @@
         </div>
         <p class="text-sm text-end">
           © 2024 Instashot. All rights reserved. <br />
-          Contact: 
+          Contact:
           <a class="underline underline-offset-2" href="https://x.com/leek531"
             >Gyumin Lee</a
           >

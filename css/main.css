@@ -1,3 +1,22 @@
-.laurel-filter{
-    filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(113deg) brightness(96%) contrast(101%);
+.laurel-filter {
+  filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(113deg)
+    brightness(96%) contrast(101%);
+}
+
+.subscribe-button {
+  background: rgb(0, 112, 193);
+  background: linear-gradient(
+    145deg,
+    rgba(0, 112, 193, 1) 0%,
+    rgba(0, 207, 25, 1) 100%
+  );
+}
+
+.subscribe-button:hover {
+  background: rgb(0, 207, 25);
+  background: linear-gradient(
+    145deg,
+    rgba(0, 207, 25, 1) 0%,
+    rgba(109, 0, 184, 1) 100%
+  );
 }
