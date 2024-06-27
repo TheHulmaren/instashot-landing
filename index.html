@@ -3,6 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link prefetch href=".img/intro/audrey0.jpeg" />
+    <link prefetch href=".img/intro/audrey1.jpeg" />
+    <link prefetch href=".img/intro/audrey2.jpeg" />
+    <link prefetch href=".img/intro/audrey-ai-0.png" />
+    <link prefetch href=".img/intro/judy0.jpeg" />
+    <link prefetch href=".img/intro/judy1.jpeg" />
+    <link prefetch href=".img/intro/judy2.jpeg" />
+    <link prefetch href=".img/intro/judy-ai-0.png" />
+    <link prefetch href=".img/intro/marylin0.jpeg" />
+    <link prefetch href=".img/intro/marylin1.jpeg" />
+    <link prefetch href=".img/intro/marylin2.jpeg" />
+    <link prefetch href=".img/intro/marylin-ai-0.png" />
+    <link prefetch href=".img/intro/marlon0.jpeg" />
+    <link prefetch href=".img/intro/marlon1.jpeg" />
+    <link prefetch href=".img/intro/marlon2.jpeg" />
+    <link prefetch href=".img/intro/marlon-ai-0.png" />
+    <link prefetch href=".img/intro/bruce0.jpeg" />
+    <link prefetch href=".img/intro/bruce1.jpeg" />
+    <link prefetch href=".img/intro/bruce2.jpeg" />
+    <link prefetch href=".img/intro/bruce-ai-0.png" />
+    <link prefetch href=".img/intro/vivien0.jpeg" />
+    <link prefetch href=".img/intro/vivien1.jpeg" />
+    <link prefetch href=".img/intro/vivien2.jpeg" />
+    <link prefetch href=".img/intro/vivien-ai-0.png" />
     <link rel="icon" type="image/x-icon" href="./img/logo.png" />
     <link href="./css/main.css" rel="stylesheet" />
     <link href="./css/output.css" rel="stylesheet" />
@@ -14,7 +40,9 @@
     crossorigin="anonymous"
   ></script>
   <body class="h-screen w-screen flex text-slate-100 bg-indigo-900">
-    <div class="mx-auto max-w-6xl bg-indigo-900 flex flex-col flex-grow">
+    <div
+      class="mx-auto max-w-6xl bg-indigo-900 flex flex-col flex-grow p-4 md:p-0"
+    >
       <nav class="p-4 flex gap-16">
         <div class="flex gap-4">
           <img src="./img/logo.png" class="w-12" />
@@ -23,7 +51,7 @@
           </h1>
         </div>
         <ul
-          class="flex h-full items-center gap-16 hover:[&_a]:underline [&_a]:cursor-pointer [&_a]:underline-offset-4"
+          class="hidden md:flex h-full items-center gap-16 hover:[&_a]:underline [&_a]:cursor-pointer [&_a]:underline-offset-4"
         >
           <a data-to="comparisonSection">Comparison</a>
           <a data-to="howtoSection">How to use</a>
@@ -33,34 +61,36 @@
       </nav>
       <main class="flex flex-col p-4 mt-4 gap-24">
         <!-- Intro banner -->
-        <div class="flex">
-          <div class="w-1/2 flex flex-col gap-8">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 flex flex-col gap-8">
             <div class="relative flex items-center justify-center w-fit h-fit">
               <span class="absolute text-center text-xs"
                 >No.1 <br />Face Resemblance</span
               >
               <img src="./img/laurel.svg" class="w-40 laurel-filter" />
             </div>
-            <h2 class="text-6xl font-bold">
+            <h2 data-aos="fade-right" data-aos-delay="200" class="text-6xl font-bold">
               Shoot your AI selfies,<br />
               <span class="text-indigo-300">instantly.</span>
             </h2>
             <p>
               Submit your photos, and get your first AI portraits with the
               highest face resemblance
-              <span class="underline underline-offset-2"
-                >in less than 8 minutes.</span
+              <span class="inline underline underline-offset-4 relative"
+                >in less than a minute.</span
               >
             </p>
             <div class="flex flex-col gap-4">
               <button
                 id="telegramButton"
-                class="w-fit p-4 hover:bg-[#24A1DE] text-indigo-200 font-bold flex items-center gap-2 border-[#24A1DE] border-4 rounded-lg transition ease-in-out duration-200"
+                class="w-fit p-4 hover:bg-[#24A1DE] text-indigo-200 font-bold flex items-center gap-2 border-[#24A1DE] border-4 rounded-2xl transition ease-in-out duration-200"
               >
                 <img src="./img/Telegram_logo.svg.webp" class="w-8 inline" />
                 Try on Telegram
               </button>
-              <p class="font-semibold p-2 px-4 rounded-full bg-slate-800 w-fit">
+              <p
+                class="font-semibold p-2 md:px-4 rounded-full bg-slate-800 w-fit"
+              >
                 🎁 <span class="text-yellow-300">Special offer</span> awaits you
                 until
                 <span class="py-1 px-2 bg-indigo-600 rounded-full"
@@ -77,112 +107,186 @@
               </span>
             </p>
           </div>
-          <div class="w-1/2 flex flex-col">
-            <div class="w-full grid grid-rows-2 grid-cols-2 gap-4">
+          <div
+            data-aos="zoom-out" data-aos-delay="200"
+            class="w-full md:w-1/2 flex flex-col mt-16 md:mt-0"
+          >
+            <div
+              class="w-full md:w-[400px] self-center grid grid-rows-2 grid-cols-2 gap-4"
+            >
               <div
                 id="introImg0"
-                class="aspect-square rounded-lg overflow-hidden flex gap-4 transform duration-500 ease-in-out"
+                class="aspect-[2/3] rounded-2xl overflow-hidden flex gap-4 transform duration-500 ease-in-out"
               ></div>
               <div
                 id="introImg1"
-                class="aspect-square rounded-lg overflow-hidden flex gap-4 transform duration-500 ease-in-out"
+                class="aspect-[2/3] rounded-2xl overflow-hidden flex gap-4 transform duration-500 ease-in-out"
               ></div>
               <div
                 id="introImg2"
-                class="aspect-square rounded-lg overflow-hidden flex gap-4 transform duration-500 ease-in-out"
+                class="aspect-[2/3] rounded-2xl overflow-hidden flex gap-4 transform duration-500 ease-in-out"
               ></div>
               <div
-                class="aspect-square rounded-lg ring-4 ring-green-500 ring-offset-4 ring-offset-indigo-900 shadow-2xl shadow-green-500 overflow-hidden"
+                class="aspect-[2/3] rounded-2xl ring-offset-indigo-900 shadow-2xl shadow-green-500 overflow-hidden"
               >
                 <div
                   id="introImg3"
-                  class="aspect-square rounded-lg overflow-hidden bg-cover flex gap-4 transform duration-1000 ease-in-out"
+                  class="aspect-[2/3] rounded-2xl overflow-hidden bg-cover flex gap-4 transform duration-1000 ease-in-out"
                 ></div>
               </div>
             </div>
           </div>
         </div>
         <!-- Comparison -->
-        <div id="comparisonSection">
+        <div id="comparisonSection" class="-mb-8 md:mb-0">
           <div class="flex flex-col items-center gap-4 mb-16">
-            <h2 class="text-sm font-bold text-yellow-400">Comparison</h2>
+            <h2 data-aos="fade-right" class="text-sm font-bold text-yellow-400">Comparison</h2>
             <p class="text-4xl font-bold mt-4 text-center">
-              Faster, cheaper, and more flexible.<br />
-              The best AI portrait generator is here!
+              Faster, cheaper, and more flexible.
             </p>
           </div>
-          <div class="relative rounded-lg">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div
-              class="absolute top-0 left-0 w-full h-full overflow-hidden rounded-lg"
+              data-aos="fade-up"
+              class="relative grayscale flex rounded-2xl overflow-clip shadow-lg shadow-slate-600"
             >
               <img
+                src="./img/comparison-a.webp"
+                class="object-cover w-1/3 aspect-square blur-sm"
+              />
+              <div class="w-2/3 flex flex-col p-4 text-slate-300">
+                <span class="relative text-base font-bold z-30">
+                  Comparison A
+                </span>
+                <span class="text-3xl font-bold my-1"
+                  >1 hour<span class="text-xs font-normal ml-2"
+                    >per request</span
+                  ></span
+                >
+                <span class="text-lg font-bold"
+                  >$175<span class="text-xs font-normal ml-2"
+                    >per 100 photos</span
+                  ></span
+                >
+                <span class="text-lg font-bold">No prompting</span>
+                <span class="text-lg font-bold">5 outfits</span>
+              </div>
+              <img
                 src="./img/comparison.webp"
-                class="w-full h-full object-cover blur-3xl opacity-50"
+                class="absolute object-cover blur-3xl -z-10 rotate-45"
               />
             </div>
             <div
-              class="absolute flex flex-col gap-6 p-4 h-full w-48 ml-[300px] backdrop-blur-md scale-110 bg-green-800 bg-opacity-30 z-10 rounded-lg shadow-lg shadow-green-400"
-            ></div>
-            <table
-              class="table-fixed w-full [&_th]:font-light [&_tr:nth-child(n+2)_td]:text-slate-300 [&_tr:nth-child(n+2)_td:nth-child(2)]:text-green-400 [&_tr:nth-child(n+2)_td:nth-child(2)]:font-bold [&_th]:py-4 [&_th]:text-nowrap [&_td]:px-8 [&_td:not(:last-child)]:border-yellow-700 relative z-10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="relative grayscale flex rounded-2xl overflow-clip shadow-lg shadow-slate-600"
             >
-              <tbody>
-                <tr>
-                  <th class="w-1/4 text-start px-4">🌎 Services</th>
-                  <td>
-                    <span class="relative text-lg font-light self-center z-30">
-                      Insta<span class="font-bold text-indigo-300">shot</span>
-                    </span>
-                  </td>
-                  <td>A**</td>
-                  <td>I**</td>
-                  <td>S**</td>
-                </tr>
-                <tr>
-                  <th class="text-start px-4">💻 Prompting</th>
-                  <td>Yes</td>
-                  <td>No</td>
-                  <td>No</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <th class="text-start px-4">⏳ Image Generation (on avg.)</th>
-                  <td>Just 1 min</td>
-                  <td>1 hour</td>
-                  <td>1.5 hour</td>
-                  <td>24 hours</td>
-                </tr>
-                <tr>
-                  <th class="text-start px-4">👚 Variability</th>
-                  <td>Unlimited</td>
-                  <td>5 outfits</td>
-                  <td>5-10 styles</td>
-                  <td>2-10 styles</td>
-                </tr>
-                <tr>
-                  <th class="text-start px-4">💰 Pricing (per 100 pics)</th>
-                  <td>$12</td>
-                  <td>$175</td>
-                  <td>$97.5</td>
-                  <td>$10</td>
-                </tr>
-              </tbody>
-            </table>
+              <img
+                src="./img/comparison-b.png"
+                class="object-cover w-1/3 aspect-square blur-sm"
+              />
+              <div class="w-2/3 flex flex-col p-4 text-slate-300">
+                <span class="relative text-base font-bold z-30">
+                  Comparison B
+                </span>
+                <span class="text-3xl font-bold my-1"
+                  >1.5 hours<span class="text-xs font-normal ml-2"
+                    >per request</span
+                  ></span
+                >
+                <span class="text-lg font-bold"
+                  >$97.5<span class="text-xs font-normal ml-2"
+                    >per 100 photos</span
+                  ></span
+                >
+                <span class="text-lg font-bold">No prompting</span>
+                <span class="text-lg font-bold">5 styles</span>
+              </div>
+              <img
+                src="./img/comparison.webp"
+                class="absolute object-cover blur-3xl -z-10 rotate-45"
+              />
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="relative flex rounded-2xl overflow-clip shadow-xl shadow-yellow-700"
+            >
+              <img
+                src="./img/intro/marylin-ai-1.jpg"
+                class="object-cover w-1/3 aspect-square"
+              />
+              <div class="w-2/3 flex flex-col p-4">
+                <span class="relative text-base font-light z-30">
+                  Insta<span class="font-bold text-indigo-300">shot</span>
+                </span>
+                <span class="text-3xl font-bold my-1 text-yellow-300"
+                  >45 secs<span class="text-xs font-normal text-slate-300 ml-2"
+                    >per request</span
+                  ></span
+                >
+                <span class="text-lg text-indigo-200 font-bold"
+                  >$7.5<span class="text-xs font-normal text-slate-300 ml-2"
+                    >per 100 photos</span
+                  ></span
+                >
+                <span class="text-lg text-indigo-200 font-bold"
+                  >Powerful Prompting</span
+                >
+                <span class="text-lg text-indigo-200 font-bold"
+                  >Unlimited Styles</span
+                >
+              </div>
+              <img
+                src="./img/comparison.webp"
+                class="absolute object-cover blur-3xl -z-10 rotate-45"
+              />
+            </div>
+            <div
+            data-aos="fade-up" data-aos-delay="600"
+              class="md:hidden relative grayscale flex rounded-2xl overflow-clip shadow-lg shadow-slate-600"
+            >
+              <img
+                src="./img/comparison-c.jpeg"
+                class="object-cover w-1/3 aspect-square blur-sm"
+              />
+              <div class="w-2/3 flex flex-col p-4 text-slate-300">
+                <span class="relative text-base font-bold z-30">
+                  Comparison C
+                </span>
+                <span class="text-3xl font-bold my-1"
+                  >24 hours<span class="text-xs font-normal ml-2"
+                    >per request</span
+                  ></span
+                >
+                <span class="text-lg font-bold"
+                  >$10<span class="text-xs font-normal ml-2"
+                    >per 100 photos</span
+                  ></span
+                >
+                <span class="text-lg font-bold">No prompting</span>
+                <span class="text-lg font-bold">10 styles</span>
+              </div>
+              <img
+                src="./img/comparison.webp"
+                class="absolute object-cover blur-3xl -z-10 rotate-45"
+              />
+            </div>
           </div>
         </div>
         <!-- How-to -->
         <div id="howtoSection">
           <div class="flex flex-col items-center gap-4 mb-16">
-            <h2 class="text-sm font-bold text-yellow-400">How to use</h2>
+            <h2 data-aos="fade-right" class="text-sm font-bold text-yellow-400">How to use</h2>
             <p class="text-4xl font-bold mt-4 text-center">
               Whole different you in just 4 steps.<br />
               Are you ready?
             </p>
           </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="flex flex-col gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div data-aos="fade-right" class="flex flex-col gap-4">
               <div
-                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -201,9 +305,9 @@
                 race and gender category.
               </p>
             </div>
-            <div class="flex flex-col gap-4">
+            <div data-aos="fade-left" class="flex flex-col gap-4">
               <div
-                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -222,9 +326,9 @@
                 24 photos of yourself.
               </p>
             </div>
-            <div class="flex flex-col gap-4">
+            <div data-aos="fade-right" class="flex flex-col gap-4">
               <div
-                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -243,9 +347,9 @@
                 take less than 8 minutes.
               </p>
             </div>
-            <div class="flex flex-col gap-4">
+            <div data-aos="fade-left" class="flex flex-col gap-4">
               <div
-                class="relative w-full aspect-square rounded-lg overflow-hidden border border-indigo-800"
+                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -272,34 +376,41 @@
         <!-- pricing -->
         <div id="pricingSection">
           <div class="flex flex-col items-center gap-4 mb-16">
-            <h2 class="text-sm font-bold text-yellow-400">Pricing</h2>
+            <h2 data-aos="fade-right" class="text-sm font-bold text-yellow-400">Pricing</h2>
             <p class="text-4xl font-bold mt-4 text-center">
               We got you covered.<br />
               Choose one that fits you the best.
             </p>
           </div>
-          <div class="flex gap-6 w-full justify-center">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full justify-center"
+          >
             <div
-              class="relative w-1/3 overflow-hidden rounded-lg border-[0.5px] border-slate-500 hover:scale-105 transition duration-300 ease-in-out"
+              data-aos="fade-right"
+              class="relative overflow-hidden rounded-2xl shadow-xl shadow-slate-600 hover:scale-105 transition duration-300 ease-in-out"
             >
+              <img
+                src="./img/comparison.webp"
+                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-30"
+              />
               <div class="relative w-full p-8 flex flex-col gap-4 z-20">
                 <h3 class="font-semibold">Starter</h3>
                 <h4 class="text-5xl font-bold">
                   $9<span class="ml-2 text-sm">per month</span>
                 </h4>
                 <button
-                  class="subscribe-button rounded-lg p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
+                  class="subscribe-button rounded-2xl p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
                 >
                   Subscribe now
                 </button>
                 <div class="flex flex-col gap-2">
-                  <span class="flex font-bold"
+                  <span class="flex font-bold text-yellow-400"
                     ><img
                       src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
                       class="w-4 mr-1"
-                    />Take 200 AI portraits per month</span
+                    />Take 120 AI portraits per month</span
                   >
-                  <span class="flex font-bold"
+                  <span class="flex font-bold text-yellow-400"
                     ><img
                       src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
                       class="w-4 mr-1"
@@ -315,11 +426,12 @@
               </div>
             </div>
             <div
-              class="relative w-1/3 overflow-hidden rounded-lg shadow-lg shadow-yellow-700 border-[0.5px] border-yellow-500 hover:scale-105 transition duration-300 ease-in-out"
+              data-aos="zoom-in-up"
+              class="relative overflow-hidden rounded-2xl shadow-xl shadow-yellow-700 hover:scale-105 transition duration-300 ease-in-out"
             >
               <img
                 src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10 rotate-90 opacity-60"
+                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-60"
               />
               <div
                 class="relative w-full p-8 flex flex-col gap-4 z-20 cursor-pointer"
@@ -335,18 +447,18 @@
                   $17<span class="ml-2 text-sm">per month</span>
                 </h4>
                 <button
-                  class="subscribe-button rounded-lg p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
+                  class="subscribe-button rounded-2xl p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
                 >
                   Subscribe now
                 </button>
                 <div class="flex flex-col gap-2">
-                  <span class="flex font-bold"
+                  <span class="flex font-bold text-yellow-400"
                     ><img
                       src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
                       class="w-4 mr-1"
-                    />Take 400 AI portraits per month</span
+                    />Take 240 AI portraits per month</span
                   >
-                  <span class="flex font-bold"
+                  <span class="flex font-bold text-yellow-400"
                     ><img
                       src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
                       class="w-4 mr-1"
@@ -368,8 +480,13 @@
               </div>
             </div>
             <div
-              class="relative w-1/3 overflow-hidden rounded-lg shadow-lg shadow-purple-700 border-[0.5px] border-purple-500 hover:scale-105 transition duration-300 ease-in-out"
+              data-aos="fade-left"
+              class="relative overflow-hidden rounded-2xl shadow-xl shadow-purple-700 hover:scale-105 transition duration-300 ease-in-out"
             >
+              <img
+                src="./img/comparison.webp"
+                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-30"
+              />
               <div class="relative w-full p-8 flex flex-col gap-4 z-20">
                 <div class="flex items-center">
                   <h3 class="font-bold">Premium</h3>
@@ -378,18 +495,18 @@
                   $35<span class="ml-2 text-sm">per month</span>
                 </h4>
                 <button
-                  class="subscribe-button rounded-lg p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
+                  class="subscribe-button rounded-2xl p-2 px-6 font-bold text-white border-[0.5px] border-green-500 hover:scale-105 transition duration-300 ease-in-out"
                 >
                   Subscribe now
                 </button>
                 <div class="flex flex-col gap-2">
-                  <span class="flex font-bold"
+                  <span class="flex font-bold text-yellow-400"
                     ><img
                       src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
                       class="w-4 mr-1"
-                    />Take 800 AI portraits per month</span
+                    />Take 480 AI portraits per month</span
                   >
-                  <span class="flex font-bold"
+                  <span class="flex font-bold text-yellow-400"
                     ><img
                       src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
                       class="w-4 mr-1"
@@ -419,8 +536,8 @@
           </div>
         </div>
         <!-- FAQ -->
-        <div id="faqSection" class="flex gap-4">
-          <div class="w-1/2">
+        <div id="faqSection" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="">
             <h2 class="text-4xl font-bold mb-4">FAQ</h2>
             <p>
               If you have more questions to ask,
@@ -431,10 +548,11 @@
               >
             </p>
           </div>
-          <div class="w-1/2 flex flex-col">
-            <div id="faq0" data-faq-index="0">
+          <div class="flex flex-col">
+            <div data-aos="fade-left" id="faq0">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="0"
               >
                 <span class="text-lg font-semibold"
                   >How does Instashot work?</span
@@ -456,9 +574,10 @@
                 photos. You can generate your photos with the model.
               </p>
             </div>
-            <div id="faq1" data-faq-index="1">
+            <div data-aos="fade-left" id="faq1">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="1"
               >
                 <span class="text-lg font-semibold"
                   >How long does it take to get photos?</span
@@ -482,9 +601,10 @@
                 photos with existing model in just 1 minute.
               </p>
             </div>
-            <div id="faq2" data-faq-index="2">
+            <div data-aos="fade-left" id="faq2">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="2"
               >
                 <span class="text-lg font-semibold">Can I prompt?</span>
                 <div class="relative w-3 h-3">
@@ -505,9 +625,10 @@
                 abusive prompts are not welcomed and may result in a ban.
               </p>
             </div>
-            <div id="faq3" data-faq-index="3">
+            <div data-aos="fade-left" id="faq3">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="3"
               >
                 <span class="text-lg font-semibold"
                   >What is the resolution of photos?</span
@@ -528,9 +649,10 @@
                 the future.
               </p>
             </div>
-            <div id="faq4" data-faq-index="4">
+            <div data-aos="fade-left" id="faq4">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="4"
               >
                 <span class="text-lg font-semibold">Can I get refunds?</span>
                 <div class="relative w-3 h-3">
@@ -550,9 +672,10 @@
                 refunds. Cancel your subscription first to get refunds.
               </p>
             </div>
-            <div id="faq5" data-faq-index="5">
+            <div data-aos="fade-left" id="faq5">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="5"
               >
                 <span class="text-lg font-semibold"
                   >How do I cancel my subscription?</span
@@ -574,9 +697,10 @@
                 your subscription.
               </p>
             </div>
-            <div id="faq6" data-faq-index="6">
+            <div data-aos="fade-left" id="faq6">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="6"
               >
                 <span class="text-lg font-semibold"
                   >How can I report an error?</span
@@ -602,9 +726,10 @@
                 team.
               </p>
             </div>
-            <div id="faq7" data-faq-index="7">
+            <div data-aos="fade-left" id="faq7">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="7"
               >
                 <span class="text-lg font-semibold"
                   >Who is behind Instashot?</span
@@ -632,9 +757,10 @@
                 contact me on 𝕏.
               </p>
             </div>
-            <div id="faq8" data-faq-index="8">
+            <div data-aos="fade-left" id="faq8">
               <div
                 class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                data-faq-index="8"
               >
                 <span class="text-lg font-semibold"
                   >Can I use photo of others?</span
@@ -661,8 +787,8 @@
         </div>
       </main>
       <footer class="w-full p-4 mt-8 flex justify-between">
-        <div class="flex gap-4">
-          <img src="./img/logo.png" class="w-10" />
+        <div class="flex gap-4 items-center">
+          <img src="./img/logo.png" class="w-10 h-fit" />
           <h1 class="text-xl font-light self-center">
             Insta<span class="font-bold text-indigo-300">shot</span>
           </h1>
@@ -678,30 +804,56 @@
     </div>
   </body>
   <script>
+    AOS.init();
+
     const imgSets = [
       {
         orig: [
-          "./img/intro/intro3.jpg",
-          "./img/intro/intro4.jpg",
-          "./img/intro/intro5.jpg",
+          "./img/intro/marylin0.jpeg",
+          "./img/intro/marylin1.jpeg",
+          "./img/intro/marylin2.jpeg",
         ],
-        gen: "./img/intro/intro1.jpg",
+        gen: "./img/intro/marylin-ai-0.png",
       },
       {
         orig: [
-          "./img/intro/intro0.jpg",
-          "./img/intro/intro7.jpg",
-          "./img/intro/intro8.jpg",
+          "./img/intro/marlon0.jpeg",
+          "./img/intro/marlon1.jpeg",
+          "./img/intro/marlon2.jpeg",
         ],
-        gen: "./img/intro/intro6.jpg",
+        gen: "./img/intro/marlon-ai-0.png",
       },
       {
         orig: [
-          "./img/intro/intro9.jpg",
-          "./img/intro/intro10.jpg",
-          "./img/intro/intro11.jpg",
+          "./img/intro/vivien0.jpeg",
+          "./img/intro/vivien1.jpeg",
+          "./img/intro/vivien2.jpeg",
         ],
-        gen: "./img/intro/intro12.jpg",
+        gen: "./img/intro/vivien-ai-0.png",
+      },
+      {
+        orig: [
+          "./img/intro/bruce0.jpeg",
+          "./img/intro/bruce1.jpeg",
+          "./img/intro/bruce2.jpeg",
+        ],
+        gen: "./img/intro/bruce-ai-0.png",
+      },
+      {
+        orig: [
+          "./img/intro/judy0.jpeg",
+          "./img/intro/judy1.jpeg",
+          "./img/intro/judy2.jpeg",
+        ],
+        gen: "./img/intro/judy-ai-0.png",
+      },
+      {
+        orig: [
+          "./img/intro/audrey0.jpeg",
+          "./img/intro/audrey1.jpeg",
+          "./img/intro/audrey2.jpeg",
+        ],
+        gen: "./img/intro/audrey-ai-0.png",
       },
     ];
 
@@ -710,17 +862,16 @@
         var new_imgs = [];
         for (let j = 0; j < imgSets.length; j++) {
           new_div = $(
-            `<div class="h-full aspect-square bg-cover rounded-lg"></div>`
+            `<div class="h-full aspect-[2/3] bg-cover bg-center rounded-2xl"></div>`
           );
           new_div.css("background-image", `url(${imgSets[j].orig[i]})`);
           new_imgs.push(new_div);
         }
         // infinite loop buffer
         new_imgs.push(
-          $(`<div class="h-full aspect-square bg-cover rounded-lg"></div>`).css(
-            "background-image",
-            `url(${imgSets[0].orig[i]})`
-          )
+          $(
+            `<div class="h-full aspect-[2/3] bg-cover bg-center rounded-2xl"></div>`
+          ).css("background-image", `url(${imgSets[0].orig[i]})`)
         );
         $(`#introImg${i}`).append(new_imgs);
       }
@@ -735,7 +886,8 @@
               .animate(
                 {
                   scrollLeft:
-                    ($(`#introImg${i}`).height() + 16) * imgSets.length,
+                    (($(`#introImg${i}`).height() * 2) / 3 + 16) *
+                    imgSets.length,
                 },
                 1000
               )
@@ -746,7 +898,7 @@
           } else {
             $(`#introImg${i}`).animate(
               {
-                scrollLeft: ($(`#introImg${i}`).height() + 16) * idx,
+                scrollLeft: (($(`#introImg${i}`).height() * 2) / 3 + 16) * idx,
               },
               1000
             );
