@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Instashot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/meta-img.png" />
+    <meta property="og:description" content="Shoot stunning AI selfies of you" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -146,8 +150,14 @@
                 ></div>
               </div>
               <div class="absolute top-full right-0 mt-4 -rotate-3">
-                <span class="handwriting text-indigo-300" id="introDisplay"></span><br>
-                <span class="handwriting text-indigo-300">In memory of Hollywood's immortal icons... 💫</span>
+                <span
+                  class="handwriting text-indigo-300"
+                  id="introDisplay"
+                ></span
+                ><br />
+                <span class="handwriting text-indigo-300"
+                  >In memory of Hollywood's immortal icons... 💫</span
+                >
               </div>
             </div>
           </div>
@@ -931,7 +941,7 @@
               1000
             );
           }
-          $('#introDisplay').text(imgSets[idx].display);
+          $("#introDisplay").text(imgSets[idx].display);
           setTimeout(() => {
             $(`#introImg${i}`).css("transform", "scale(1.0)");
           }, 500);
