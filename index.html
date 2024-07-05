@@ -6,7 +6,10 @@
     <meta property="og:title" content="Instashot" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/meta-img.png" />
-    <meta property="og:description" content="Shoot stunning AI selfies of you" />
+    <meta
+      property="og:description"
+      content="Shoot stunning AI selfies of you"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -818,20 +821,33 @@
           </div>
         </div>
       </main>
-      <footer class="w-full p-4 mt-8 flex justify-between">
-        <div class="flex gap-4 items-center">
-          <img src="./img/logo.png" class="w-10 h-fit" />
-          <h1 class="text-xl font-light self-center">
-            Insta<span class="font-bold text-indigo-300">shot</span>
-          </h1>
+      <footer class="w-full p-4 mt-8 flex flex-col">
+        <div class="flex justify-between">
+          <div class="flex gap-4 items-center">
+            <img src="./img/logo.png" class="w-10 h-fit" />
+            <h1 class="text-xl font-light self-center">
+              Insta<span class="font-bold text-indigo-300">shot</span>
+            </h1>
+          </div>
+          <p class="text-sm text-end">
+            © 2024 Instashot. All rights reserved. <br />
+            Contact:
+            <a class="underline underline-offset-2" href="https://x.com/leek531"
+              >Gyumin Lee</a
+            >
+          </p>
         </div>
-        <p class="text-sm text-end">
-          © 2024 Instashot. All rights reserved. <br />
-          Contact:
-          <a class="underline underline-offset-2" href="https://x.com/leek531"
-            >Gyumin Lee</a
-          >
-        </p>
+        <div class="flex gap-4 self-center *:transition-all *:duration-200 *:ease-in-out">
+          <a class="text-indigo-300 hover:text-white text-sm font-bold" href="terms.html">
+            Terms of Service
+          </a>
+          <a class="text-indigo-300 hover:text-white text-sm font-bold" href="refunds.html">
+            Refund Policy
+          </a>
+          <a class="text-indigo-300 hover:text-white text-sm font-bold" href="privacy.html">
+            Privacy Policy
+          </a>
+        </div>
       </footer>
     </div>
   </body>
