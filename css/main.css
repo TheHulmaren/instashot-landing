@@ -1,3 +1,9 @@
+* {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .laurel-filter {
   filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(113deg)
     brightness(96%) contrast(101%);
@@ -29,4 +35,12 @@
   font-family: "Gloria Hallelujah", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 20;
+}
+
+.icon-medium {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
 }

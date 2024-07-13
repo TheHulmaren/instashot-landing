@@ -13,9 +13,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/rix4xqt.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="prefetch" href="img/intro/audrey0.jpeg" />
@@ -52,15 +57,15 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"
   ></script>
-  <body class="h-screen w-screen flex text-slate-100 bg-indigo-900">
+  <body class="h-screen w-screen flex text-custom3 bg-custom0">
     <div
-      class="mx-auto max-w-6xl bg-indigo-900 flex flex-col flex-grow p-4 md:p-0"
+      class="mx-auto max-w-6xl bg-custom0 flex flex-col flex-grow p-4 md:p-0"
     >
       <nav class="p-4 flex gap-16">
         <div class="flex gap-4">
           <img src="./img/logo.png" class="w-12" />
           <h1 class="text-xl font-light self-center">
-            Insta<span class="font-bold text-indigo-300">shot</span>
+            Insta<span class="text-indigo-300">shot</span>
           </h1>
         </div>
         <ul
@@ -82,13 +87,9 @@
               >
               <img src="./img/laurel.svg" class="w-40 laurel-filter" />
             </div>
-            <h2
-              data-aos="fade-right"
-              data-aos-delay="200"
-              class="text-6xl font-bold"
-            >
+            <h2 data-aos="fade-right" data-aos-delay="200" class="text-6xl">
               Shoot your AI selfies,<br />
-              <span class="text-indigo-300">instantly.</span>
+              <span class="text-indigo-300 font-medium">instantly.</span>
             </h2>
             <p>
               Submit your photos, and get your first AI portraits with the
@@ -105,22 +106,13 @@
                 <img src="./img/Telegram_logo.svg.webp" class="w-8 inline" />
                 Try on Telegram
               </a>
-              <p
-                class="font-semibold p-2 md:px-4 rounded-full bg-slate-800 w-fit"
-              >
-                🎁 <span class="text-yellow-300">Special offer</span> awaits you
-                until
-                <span class="py-1 px-2 bg-indigo-600 rounded-full"
-                  >July 4th</span
-                >
-              </p>
             </div>
             <p class="text-indigo-100">
               So far, more than <span class="text-yellow-300">400+</span> cool
               photos from <span class="text-yellow-300">25+</span> people have
               been generated with
               <span class="text-lg font-light self-center">
-                Insta<span class="font-bold text-indigo-300">shot</span>
+                Insta<span class="text-indigo-300">shot</span>
               </span>
             </p>
           </div>
@@ -171,66 +163,33 @@
             <h2 data-aos="fade-right" class="text-sm font-bold text-yellow-400">
               Comparison
             </h2>
-            <p class="text-4xl font-bold mt-4 text-center">
+            <p class="text-4xl mt-4 text-center">
               Faster, cheaper, and more flexible.
             </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div
               data-aos="fade-up"
-              class="relative grayscale flex rounded-2xl overflow-clip shadow-lg shadow-slate-600"
+              class="relative grayscale flex rounded-2xl overflow-clip bg-custom1"
             >
               <img
                 src="./img/comparison-a.webp"
                 class="object-cover w-1/3 aspect-square blur-sm"
               />
               <div class="w-2/3 flex flex-col p-4 text-slate-300">
-                <span class="relative text-base font-bold z-30">
-                  Comparison A
-                </span>
-                <span class="text-3xl font-bold my-1"
+                <span class="relative text-base z-30"> Comparison A </span>
+                <span class="text-3xl my-1"
                   >1 hour<span class="text-xs font-normal ml-2"
                     >per request</span
                   ></span
                 >
-                <span class="text-lg font-bold"
+                <span class="mb-2"
                   >$175<span class="text-xs font-normal ml-2"
                     >per 100 photos</span
                   ></span
                 >
-                <span class="text-lg font-bold">No prompting</span>
-                <span class="text-lg font-bold">5 outfits</span>
-              </div>
-              <img
-                src="./img/comparison.webp"
-                class="absolute object-cover blur-3xl -z-10 rotate-45"
-              />
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="relative grayscale flex rounded-2xl overflow-clip shadow-lg shadow-slate-600"
-            >
-              <img
-                src="./img/comparison-b.png"
-                class="object-cover w-1/3 aspect-square blur-sm"
-              />
-              <div class="w-2/3 flex flex-col p-4 text-slate-300">
-                <span class="relative text-base font-bold z-30">
-                  Comparison B
-                </span>
-                <span class="text-3xl font-bold my-1"
-                  >1.5 hours<span class="text-xs font-normal ml-2"
-                    >per request</span
-                  ></span
-                >
-                <span class="text-lg font-bold"
-                  >$97.5<span class="text-xs font-normal ml-2"
-                    >per 100 photos</span
-                  ></span
-                >
-                <span class="text-lg font-bold">No prompting</span>
-                <span class="text-lg font-bold">5 styles</span>
+                <span >No prompting</span>
+                <span >5 outfits</span>
               </div>
               <img
                 src="./img/comparison.webp"
@@ -240,7 +199,7 @@
             <div
               data-aos="fade-up"
               data-aos-delay="400"
-              class="relative flex rounded-2xl overflow-clip shadow-xl shadow-yellow-700"
+              class="relative flex rounded-2xl overflow-clip"
             >
               <img
                 src="./img/intro/marylin-ai-0.png"
@@ -248,24 +207,20 @@
               />
               <div class="w-2/3 flex flex-col p-4">
                 <span class="relative text-base font-light z-30">
-                  Insta<span class="font-bold text-indigo-300">shot</span>
+                  Insta<span class="text-indigo-300">shot</span>
                 </span>
-                <span class="text-3xl font-bold my-1 text-yellow-300"
-                  >45 secs<span class="text-xs font-normal text-slate-300 ml-2"
+                <span class="text-3xl my-1 text-yellow-300"
+                  >35 secs<span class="text-xs font-normal text-slate-300 ml-2"
                     >per request</span
                   ></span
                 >
-                <span class="text-lg text-indigo-200 font-bold"
+                <span class="mb-2"
                   >$7.5<span class="text-xs font-normal text-slate-300 ml-2"
                     >per 100 photos</span
                   ></span
                 >
-                <span class="text-lg text-indigo-200 font-bold"
-                  >Powerful Prompting</span
-                >
-                <span class="text-lg text-indigo-200 font-bold"
-                  >Unlimited Styles</span
-                >
+                <span class=" text-indigo-200">Powerful Prompting</span>
+                <span class="text-indigo-200">Unlimited Styles</span>
               </div>
               <img
                 src="./img/comparison.webp"
@@ -274,8 +229,38 @@
             </div>
             <div
               data-aos="fade-up"
+              data-aos-delay="200"
+              class="relative grayscale flex rounded-2xl overflow-clip bg-custom1"
+            >
+              <img
+                src="./img/comparison-b.png"
+                class="object-cover w-1/3 aspect-square blur-sm"
+              />
+              <div class="w-2/3 flex flex-col p-4 text-slate-300">
+                <span class="relative text-base z-30"> Comparison B </span>
+                <span class="text-3xl my-1"
+                  >1.5 hours<span class="text-xs font-normal ml-2"
+                    >per request</span
+                  ></span
+                >
+                <span class="mb-2"
+                  >$97.5<span class="text-xs font-normal ml-2"
+                    >per 100 photos</span
+                  ></span
+                >
+                <span >No prompting</span>
+                <span >5 styles</span>
+              </div>
+              <img
+                src="./img/comparison.webp"
+                class="absolute object-cover blur-3xl -z-10 rotate-45"
+              />
+            </div>
+
+            <div
+              data-aos="fade-up"
               data-aos-delay="600"
-              class="md:hidden relative grayscale flex rounded-2xl overflow-clip shadow-lg shadow-slate-600"
+              class="md:hidden relative grayscale flex rounded-2xl overflow-clip bg-custom1"
             >
               <img
                 src="./img/comparison-c.jpeg"
@@ -290,13 +275,13 @@
                     >per request</span
                   ></span
                 >
-                <span class="text-lg font-bold"
+                <span class="mb-2"
                   >$10<span class="text-xs font-normal ml-2"
                     >per 100 photos</span
                   ></span
                 >
-                <span class="text-lg font-bold">No prompting</span>
-                <span class="text-lg font-bold">10 styles</span>
+                <span>No prompting</span>
+                <span>10 styles</span>
               </div>
               <img
                 src="./img/comparison.webp"
@@ -311,15 +296,15 @@
             <h2 data-aos="fade-right" class="text-sm font-bold text-yellow-400">
               How to use
             </h2>
-            <p class="text-4xl font-bold mt-4 text-center">
+            <p class="text-4xl mt-4 text-center">
               Whole different you in just 4 steps.<br />
               Are you ready?
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div data-aos="fade-right" class="flex flex-col gap-4">
+          <div class="flex flex-col gap-8 px-20">
+            <div data-aos="fade-right" class="flex flex-col gap-4 md:w-2/3">
               <div
-                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
+                class="relative w-full md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -332,15 +317,15 @@
                   ></div>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold">0. Tell us who you are</h3>
+              <h3 class=" font-bold">0. Tell us who you are</h3>
               <p class="text-slate-300">
                 We need to know a bit about you to get started. Tell us your
                 race and gender category.
               </p>
             </div>
-            <div data-aos="fade-left" class="flex flex-col gap-4">
+            <div data-aos="fade-left" class="flex flex-col gap-4 md:w-2/3 md:self-end md:-mt-48 md:text-end">
               <div
-                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
+                class="relative w-full self-end md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -353,15 +338,15 @@
                   ></div>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold">1. Stage your photos</h3>
+              <h3 class=" font-bold">1. Stage your photos</h3>
               <p class="text-slate-300">
                 Submit your photos to train your AI model. You can submit up to
                 24 photos of yourself.
               </p>
             </div>
-            <div data-aos="fade-right" class="flex flex-col gap-4">
+            <div data-aos="fade-right" class="flex flex-col gap-4 md:w-2/3 md:-mt-48 md:text-start">
               <div
-                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
+                class="relative w-full md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -374,15 +359,15 @@
                   ></div>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold">2. Train your AI model</h3>
+              <h3 class=" font-bold">2. Train your AI model</h3>
               <p class="text-slate-300">
                 With your staged photos, we will train your AI model. It will
-                take less than 8 minutes.
+                take less than 4 minutes.
               </p>
             </div>
-            <div data-aos="fade-left" class="flex flex-col gap-4">
+            <div data-aos="fade-left" class="flex flex-col gap-4 md:w-2/3 md:self-end md:-mt-48 md:text-end">
               <div
-                class="relative w-full aspect-square rounded-2xl overflow-hidden border border-indigo-800"
+                class="relative w-full self-end md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
                 <div
                   style="background-image: url(./img/howto.webp)"
@@ -395,12 +380,12 @@
                   ></div>
                 </div>
               </div>
-              <h3 class="text-2xl font-bold">
+              <h3 class=" font-bold">
                 3. Generate your photos with prompt
               </h3>
               <p class="text-slate-300">
                 Generate your photos with prompt. Four photos will be generated
-                at once. It will take less than 1-2 minute, depending on the
+                at once. It will take about 30 to 60 seconds, depending on the
                 server load.
               </p>
             </div>
@@ -412,7 +397,7 @@
             <h2 data-aos="fade-right" class="text-sm font-bold text-yellow-400">
               Pricing
             </h2>
-            <p class="text-4xl font-bold mt-4 text-center">
+            <p class="text-4xl mt-4 text-center">
               We got you covered.<br />
               Choose one that fits you the best.
             </p>
@@ -422,11 +407,11 @@
           >
             <div
               data-aos="fade-right"
-              class="relative overflow-hidden rounded-2xl shadow-xl shadow-slate-600 hover:scale-105 transition duration-300 ease-in-out"
+              class="relative overflow-hidden rounded-2xl cursor-pointer border-2 border-custom1 hover:bg-custom1 transition duration-300 ease-in-out"
             >
               <img
                 src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-30"
+                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-30 grayscale"
               />
               <div class="relative w-full p-8 flex flex-col gap-4 z-20">
                 <h3 class="font-semibold">Starter</h3>
@@ -439,34 +424,33 @@
                   Subscribe now
                 </button>
                 <div class="flex flex-col gap-2">
-                  <span class="flex font-bold"
-                    ><img
-                      src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Take 120 AI portraits per month</span
+                  <span class="flex"
+                    ><span class="material-symbols-outlined icon-medium mr-2">
+                      photo_camera </span
+                    >Take 120 AI portraits per month</span
                   >
-                  <span class="flex font-bold"
-                    ><img
-                      src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Take up to 2 portraits at a time</span
+                  <span class="flex"
+                    ><span class="material-symbols-outlined icon-medium mr-2">
+                      switch_account </span
+                    >Get 2 portraits per generation</span
                   >
-                  <span class="flex text-slate-200"
-                    ><img
-                      src="img/google-icons/shuffle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Random photo generation</span
+                  <span class="flex text-slate-300 font-light"
+                    ><span
+                      class="material-symbols-outlined text-slate-300 mr-2"
+                    >
+                      shuffle </span
+                    >Random photo generation</span
                   >
                 </div>
               </div>
             </div>
             <div
               data-aos="zoom-in-up"
-              class="relative overflow-hidden rounded-2xl shadow-xl shadow-yellow-700 hover:scale-105 transition duration-300 ease-in-out"
+              class="relative overflow-hidden rounded-2xl border-2 border-custom2 hover:bg-custom1 transition duration-300 ease-in-out"
             >
               <img
                 src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-60"
+                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-60 grayscale"
               />
               <div
                 class="relative w-full p-8 flex flex-col gap-4 z-20 cursor-pointer"
@@ -487,40 +471,40 @@
                   Subscribe now
                 </button>
                 <div class="flex flex-col gap-2">
-                  <span class="flex font-bold"
-                    ><img
-                      src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Take 240 AI portraits per month</span
+                  <span class="flex"
+                    ><span class="material-symbols-outlined icon-medium mr-2">
+                      photo_camera </span
+                    >Take 240 AI portraits per month</span
                   >
-                  <span class="flex font-bold"
-                    ><img
-                      src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Take up to 4 portraits at a time</span
+                  <span class="flex"
+                    ><span class="material-symbols-outlined icon-medium mr-2">
+                      switch_account </span
+                    >Get 4 portraits per generation</span
                   >
-                  <span class="flex text-slate-200"
-                    ><img
-                      src="img/google-icons/shuffle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Random photo generation</span
+                  <span class="flex text-slate-300 font-light"
+                    ><span
+                      class="material-symbols-outlined text-slate-300 mr-2"
+                    >
+                      shuffle </span
+                    >Random photo generation</span
                   >
-                  <span class="flex text-slate-200"
-                    ><img
-                      src="img/google-icons/keyboard_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Write your own prompt</span
+                  <span class="flex text-slate-300 font-light"
+                    ><span
+                      class="material-symbols-outlined text-slate-300 mr-2"
+                    >
+                      keyboard </span
+                    >Write your own prompt</span
                   >
                 </div>
               </div>
             </div>
             <div
               data-aos="fade-left"
-              class="relative overflow-hidden rounded-2xl shadow-xl shadow-purple-700 hover:scale-105 transition duration-300 ease-in-out"
+              class="relative overflow-hidden rounded-2xl cursor-pointer border-2 border-custom1 hover:bg-custom1 transition duration-300 ease-in-out"
             >
               <img
                 src="./img/comparison.webp"
-                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-30"
+                class="absolute w-full h-full blur-3xl z-10 rotate-45 opacity-30 grayscale"
               />
               <div class="relative w-full p-8 flex flex-col gap-4 z-20">
                 <div class="flex items-center">
@@ -535,35 +519,36 @@
                   Subscribe now
                 </button>
                 <div class="flex flex-col gap-2">
-                  <span class="flex font-bold"
-                    ><img
-                      src="./img/google-icons/photo_camera_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Take 480 AI portraits per month</span
+                  <span class="flex"
+                    ><span class="material-symbols-outlined icon-medium mr-2">
+                      photo_camera </span
+                    >Take 480 AI portraits per month</span
                   >
-                  <span class="flex font-bold"
-                    ><img
-                      src="img/google-icons/switch_account_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Take up to 8 portraits at a time</span
+                  <span class="flex"
+                    ><span class="material-symbols-outlined icon-medium mr-2">
+                      switch_account </span
+                    >Get 6 portraits per generation</span
                   >
-                  <span class="flex text-slate-200"
-                    ><img
-                      src="img/google-icons/shuffle_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Random photo generation</span
+                  <span class="flex text-slate-300 font-light"
+                    ><span
+                      class="material-symbols-outlined text-slate-300 mr-2"
+                    >
+                      shuffle </span
+                    >Random photo generation</span
                   >
-                  <span class="flex text-slate-200"
-                    ><img
-                      src="img/google-icons/keyboard_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Write your own prompt</span
+                  <span class="flex text-slate-300 font-light"
+                    ><span
+                      class="material-symbols-outlined text-slate-300 mr-2"
+                    >
+                      keyboard </span
+                    >Write your own prompt</span
                   >
-                  <span class="flex text-slate-200"
-                    ><img
-                      src="img/google-icons/filter_alt_off_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-                      class="w-4 mr-1"
-                    />Unlock negative prompting</span
+                  <span class="flex text-slate-300 font-light"
+                    ><span
+                      class="material-symbols-outlined text-slate-300 mr-2"
+                    >
+                      filter_alt_off </span
+                    >Unlock negative prompting</span
                   >
                 </div>
               </div>
@@ -573,8 +558,8 @@
         <!-- FAQ -->
         <div id="faqSection" class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="">
-            <h2 class="text-4xl font-bold mb-4">FAQ</h2>
-            <p>
+            <h2 class="text-4xl mb-4">FAQ</h2>
+            <p class="text-slate-300">
               If you have more questions to ask,
               <a
                 class="underline underline-offset-2"
@@ -586,10 +571,10 @@
           <div class="flex flex-col">
             <div data-aos="fade-left" id="faq0">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="0"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >How does Instashot work?</span
                 >
                 <div class="relative w-3 h-3">
@@ -602,7 +587,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 We use AI technologies to generate portraits that best describes
                 you. To get started, you need to submit your photos up to 24
                 pics. Then we will train your custom AI model based on your
@@ -611,10 +596,10 @@
             </div>
             <div data-aos="fade-left" id="faq1">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="1"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >How long does it take to get photos?</span
                 >
                 <div class="relative w-3 h-3">
@@ -627,7 +612,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 It will take about 7 minutes to train your AI model. Image
                 generation takes 1 minute on average. For first time users, it
                 will take about 8 (=7+1) minutes to get your first AI portraits.
@@ -638,10 +623,10 @@
             </div>
             <div data-aos="fade-left" id="faq2">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="2"
               >
-                <span class="text-lg font-semibold">Can I prompt?</span>
+                <span class="text-lg">Can I prompt?</span>
                 <div class="relative w-3 h-3">
                   <div
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
@@ -652,7 +637,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 Yes, you can prompt when generating your photos.<br /><br />
                 For Telegram users, type your prompt after /imagine command, and
                 your photos will be generated based on the prompt.<br /><br />
@@ -662,10 +647,10 @@
             </div>
             <div data-aos="fade-left" id="faq3">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="3"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >What is the resolution of photos?</span
                 >
                 <div class="relative w-3 h-3">
@@ -678,7 +663,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 Currently, the photos are generated in 512x768 portrait
                 resolution. We are considering adding more resolution options in
                 the future.
@@ -686,10 +671,10 @@
             </div>
             <div data-aos="fade-left" id="faq4">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="4"
               >
-                <span class="text-lg font-semibold">Can I get refunds?</span>
+                <span class="text-lg">Can I get refunds?</span>
                 <div class="relative w-3 h-3">
                   <div
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
@@ -700,7 +685,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 Yes, you can get refunds any time. But please note that refunds
                 are only available for unused monthly quota.<br /><br />
                 Once you have used all your monthly quota, you cannot get
@@ -709,10 +694,10 @@
             </div>
             <div data-aos="fade-left" id="faq5">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="5"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >How do I cancel my subscription?</span
                 >
                 <div class="relative w-3 h-3">
@@ -725,7 +710,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 You can cancel your monthly subscription at any time.
                 <br /><br />
                 For Telegram users, type /cancelsubscription command to cancel
@@ -734,10 +719,10 @@
             </div>
             <div data-aos="fade-left" id="faq6">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="6"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >How can I report an error?</span
                 >
                 <div class="relative w-3 h-3">
@@ -750,7 +735,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 If you encounter an error, please
                 <a
                   class="underline underline-offset-2"
@@ -763,10 +748,10 @@
             </div>
             <div data-aos="fade-left" id="faq7">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="7"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >Who is behind Instashot?</span
                 >
                 <div class="relative w-3 h-3">
@@ -779,7 +764,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 Instashot is developed and maintained solely by one person,
                 <a
                   class="underline underline-offset-2"
@@ -794,10 +779,10 @@
             </div>
             <div data-aos="fade-left" id="faq8">
               <div
-                class="flex justify-between items-center py-4 border-t border-indigo-800 cursor-pointer"
+                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
                 data-faq-index="8"
               >
-                <span class="text-lg font-semibold"
+                <span class="text-lg"
                   >Can I use photo of others?</span
                 >
                 <div class="relative w-3 h-3">
@@ -810,7 +795,7 @@
                   ></div>
                 </div>
               </div>
-              <p class="text-indigo-100 h-0 overflow-hidden">
+              <p class="text-slate-300 h-0 overflow-hidden">
                 While we do not restrict you from using photos of others, we
                 recommend you to use your own photos.
                 <br /><br />
@@ -821,43 +806,42 @@
           </div>
         </div>
       </main>
-      <footer class="w-full p-4 mt-8 flex flex-col">
-        <div class="flex justify-between">
+      <footer class="w-full p-4 mt-8 flex">
+        <div class="w-full flex flex-col items-center gap-4 md:flex-row justify-between">
           <div class="flex gap-4 items-center">
-            <img src="./img/logo.png" class="w-10 h-fit" />
+            <img src="./img/logo.png" class="w-10" />
             <h1 class="text-xl font-light self-center">
-              Insta<span class="font-bold text-indigo-300">shot</span>
+              Insta<span class="text-indigo-300">shot</span>
             </h1>
           </div>
-          <p class="text-sm text-end">
+          <div
+            class="flex gap-4 self-center *:transition-all *:duration-200 *:ease-in-out"
+          >
+            <a
+              class="text-slate-300 hover:text-white text-sm"
+              href="terms.html"
+            >
+              Terms of Service
+            </a>
+            <a
+              class="text-slate-300 hover:text-white text-sm"
+              href="refunds.html"
+            >
+              Refund Policy
+            </a>
+            <a
+              class="text-slate-300 hover:text-white text-sm"
+              href="privacy.html"
+            >
+              Privacy Policy
+            </a>
+          </div>
+          <p class="text-sm text-center md:text-end">
             © 2024 Instashot. All rights reserved. <br />
-            Contact:
             <a class="underline underline-offset-2" href="https://x.com/leek531"
               >Gyumin Lee</a
             >
           </p>
-        </div>
-        <div
-          class="flex gap-4 self-center *:transition-all *:duration-200 *:ease-in-out"
-        >
-          <a
-            class="text-indigo-300 hover:text-white text-sm font-bold"
-            href="terms.html"
-          >
-            Terms of Service
-          </a>
-          <a
-            class="text-indigo-300 hover:text-white text-sm font-bold"
-            href="refunds.html"
-          >
-            Refund Policy
-          </a>
-          <a
-            class="text-indigo-300 hover:text-white text-sm font-bold"
-            href="privacy.html"
-          >
-            Privacy Policy
-          </a>
         </div>
       </footer>
     </div>
