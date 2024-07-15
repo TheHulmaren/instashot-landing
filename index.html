@@ -188,8 +188,8 @@
                     >per 100 photos</span
                   ></span
                 >
-                <span >No prompting</span>
-                <span >5 outfits</span>
+                <span>No prompting</span>
+                <span>5 outfits</span>
               </div>
               <img
                 src="./img/comparison.webp"
@@ -219,7 +219,7 @@
                     >per 100 photos</span
                   ></span
                 >
-                <span class=" text-indigo-200">Powerful Prompting</span>
+                <span class="text-indigo-200">Powerful Prompting</span>
                 <span class="text-indigo-200">Unlimited Styles</span>
               </div>
               <img
@@ -248,15 +248,14 @@
                     >per 100 photos</span
                   ></span
                 >
-                <span >No prompting</span>
-                <span >5 styles</span>
+                <span>No prompting</span>
+                <span>5 styles</span>
               </div>
               <img
                 src="./img/comparison.webp"
                 class="absolute object-cover blur-3xl -z-10 rotate-45"
               />
             </div>
-
             <div
               data-aos="fade-up"
               data-aos-delay="600"
@@ -317,13 +316,16 @@
                   ></div>
                 </div>
               </div>
-              <h3 class=" font-bold">0. Tell us who you are</h3>
+              <h3 class="font-bold">0. Tell us who you are</h3>
               <p class="text-slate-300">
                 We need to know a bit about you to get started. Tell us your
                 race and gender category.
               </p>
             </div>
-            <div data-aos="fade-left" class="flex flex-col gap-4 md:w-2/3 md:self-end md:-mt-48 md:text-end">
+            <div
+              data-aos="fade-left"
+              class="flex flex-col gap-4 md:w-2/3 md:self-end md:-mt-48 md:text-end"
+            >
               <div
                 class="relative w-full self-end md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
@@ -338,13 +340,16 @@
                   ></div>
                 </div>
               </div>
-              <h3 class=" font-bold">1. Stage your photos</h3>
+              <h3 class="font-bold">1. Stage your photos</h3>
               <p class="text-slate-300">
                 Submit your photos to train your AI model. You can submit up to
                 24 photos of yourself.
               </p>
             </div>
-            <div data-aos="fade-right" class="flex flex-col gap-4 md:w-2/3 md:-mt-48 md:text-start">
+            <div
+              data-aos="fade-right"
+              class="flex flex-col gap-4 md:w-2/3 md:-mt-48 md:text-start"
+            >
               <div
                 class="relative w-full md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
@@ -359,13 +364,16 @@
                   ></div>
                 </div>
               </div>
-              <h3 class=" font-bold">2. Train your AI model</h3>
+              <h3 class="font-bold">2. Train your AI model</h3>
               <p class="text-slate-300">
                 With your staged photos, we will train your AI model. It will
                 take less than 4 minutes.
               </p>
             </div>
-            <div data-aos="fade-left" class="flex flex-col gap-4 md:w-2/3 md:self-end md:-mt-48 md:text-end">
+            <div
+              data-aos="fade-left"
+              class="flex flex-col gap-4 md:w-2/3 md:self-end md:-mt-48 md:text-end"
+            >
               <div
                 class="relative w-full self-end md:w-1/2 aspect-square rounded-2xl overflow-hidden border border-custom1"
               >
@@ -380,9 +388,7 @@
                   ></div>
                 </div>
               </div>
-              <h3 class=" font-bold">
-                3. Generate your photos with prompt
-              </h3>
+              <h3 class="font-bold">3. Generate your photos with prompt</h3>
               <p class="text-slate-300">
                 Generate your photos with prompt. Four photos will be generated
                 at once. It will take about 30 to 60 seconds, depending on the
@@ -522,7 +528,7 @@
                   <span class="flex"
                     ><span class="material-symbols-outlined icon-medium mr-2">
                       photo_camera </span
-                    >Take 480 AI portraits per month</span
+                    >Take <b>480 AI portraits</b> per month</span
                   >
                   <span class="flex"
                     ><span class="material-symbols-outlined icon-medium mr-2">
@@ -556,7 +562,7 @@
           </div>
         </div>
         <!-- FAQ -->
-        <div id="faqSection" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div id="faqSection" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div class="">
             <h2 class="text-4xl mb-4">FAQ</h2>
             <p class="text-slate-300">
@@ -568,13 +574,13 @@
               >
             </p>
           </div>
-          <div class="flex flex-col">
-            <div data-aos="fade-left" id="faq0">
+          <div class="flex flex-col" id="faqList">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="0"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg"
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
                   >How does Instashot work?</span
                 >
                 <div class="relative w-3 h-3">
@@ -582,84 +588,163 @@
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
               <p class="text-slate-300 h-0 overflow-hidden">
-                We use AI technologies to generate portraits that best describes
-                you. To get started, you need to submit your photos up to 24
-                pics. Then we will train your custom AI model based on your
-                photos. You can generate your photos with the model.
+                We use the latest Stable Diffusion AI technologies, accompanied
+                by our unique fine-tunes and know-hows, to generate portraits
+                that best describe you. <br /><br />To get started, you need to
+                submit your photos up to 24 pics, with 12 pics as minimum
+                amount. Then we will train your custom AI model based on your
+                photos and you can generate your photos with the model you have
+                trained.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq1">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="1"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg"
-                  >How long does it take to get photos?</span
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >What are good photos for training?</span
                 >
                 <div class="relative w-3 h-3">
                   <div
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
-              <p class="text-slate-300 h-0 overflow-hidden">
-                It will take about 7 minutes to train your AI model. Image
-                generation takes 1 minute on average. For first time users, it
-                will take about 8 (=7+1) minutes to get your first AI portraits.
+              <p class="text-slate-300 h-0 py-0 overflow-hidden">
+                Your photos should include..
                 <br /><br />
-                Once you have your AI model trained, you can generate your
-                photos with existing model in just 1 minute.
+                Only you in the photo<br />
+                Various facial expressions and angles<br />
+                A face that is clearly visible, not too big or too small<br />
+                No hands, accessories, or other objects covering your face
+                <br />
+                <br />
+                Glasses are generally not recommended for optimal results. But
+                if you wear glasses all the time so you want them to be in your
+                photos, use high quality photos with clear glasses and no
+                reflections.
+                <br /><br />
+                For Telegram users, use /stage command and bot will show you a
+                photo submission guide.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq2">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="2"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg">Can I prompt?</span>
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >Can I use photo of others?</span
+                >
                 <div class="relative w-3 h-3">
                   <div
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
               <p class="text-slate-300 h-0 overflow-hidden">
-                Yes, you can prompt when generating your photos.<br /><br />
+                While we do not restrict the use of photos of others, we
+                recommend using only your own photos, and also keeping your
+                prompts safe and appropriate.
+                <br /><br />
+                Any problems or issues caused by using photos of others for
+                training and publishing generated results to public are your
+                responsibility. We are not responsible for any issues regarding
+                it.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="faqListElement">
+              <div
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
+              >
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >Can I prompt?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-slate-300 h-0 overflow-hidden">
+                Yes, you can use custom prompts when generating your photos if
+                your subscription tier is either Essential or Premium. Users
+                with Starter tier will get randomly prompted photos only.<br /><br />
                 For Telegram users, type your prompt after /imagine command, and
-                your photos will be generated based on the prompt.<br /><br />
+                your photos will be generated based on it.<br /><br />
                 Make sure to keep your prompt appropriate. Malicious, NSFW or
                 abusive prompts are not welcomed and may result in a ban.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq3">
+
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="3"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg"
-                  >What is the resolution of photos?</span
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                >
+                  How long does it take to get photos?</span
                 >
                 <div class="relative w-3 h-3">
                   <div
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-slate-300 h-0 overflow-hidden">
+                It will take about 4 minutes to train your AI model. Image
+                generation takes 35 seconds on average. So for the first time
+                users, it will take about 5 minutes (≅ 4 min + 35 sec) to get
+                your first AI photos.
+                <br /><br />
+                Once you have your AI model trained, you can generate your
+                photos with existing model typically in just 30 to 60 seconds.
+                <br /><br />
+                Please remember that the training and generation might take
+                longer than expected depending on the GPU server load.<br />
+                If you think you are experiencing way too much delay and haven't
+                got any response from our bot, please contact
+                <a
+                  class="underline underline-offset-2"
+                  href="https://t.me/GyuminLee531"
+                  >our support Telegram channel</a
+                >. We will help you get through.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="faqListElement">
+              <div
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
+              >
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >How big are the generated images?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
@@ -669,35 +754,63 @@
                 the future.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq4">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="4"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg">Can I get refunds?</span>
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >What languages do you support?</span
+                >
                 <div class="relative w-3 h-3">
                   <div
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-slate-300 h-0 py-0 overflow-hidden">
+                For now we only support English in our Telegram bot.
+                <br /><br />
+                We are planning to add support for more languages in the future.
+                Stay tuned! If you have any language requests, please let us
+                know in our Telegram channel.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="faqListElement">
+              <div
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
+              >
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >Can I get refunds?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
               <p class="text-slate-300 h-0 overflow-hidden">
-                Yes, you can get refunds any time. But please note that refunds
-                are only available for unused monthly quota.<br /><br />
-                Once you have used all your monthly quota, you cannot get
-                refunds. Cancel your subscription first to get refunds.
+                Yes, you can get a refund proportionate to the remaining days
+                until the next billing date.<br /><br />
+                To request a refund, please leave us a message at our customer
+                support Telegram channel.<br />
+                Be sure to include your Telegram User ID and/or email address
+                associated with your payment in the refund request.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq5">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="5"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg"
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
                   >How do I cancel my subscription?</span
                 >
                 <div class="relative w-3 h-3">
@@ -705,24 +818,53 @@
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
               <p class="text-slate-300 h-0 overflow-hidden">
-                You can cancel your monthly subscription at any time.
+                Yes, you can cancel your monthly subscription at any time.
+                <br /><br />After cancellation, it will enter a "grace period"
+                until it expires at the next renewal date and you can easily
+                resume your subscription within the period. Beyond that, your
+                subscription will be terminated, and you will need to setup a
+                new subscription when you subscribe again in the future.
                 <br /><br />
-                For Telegram users, type /cancelsubscription command to cancel
-                your subscription.
+                For Telegram users, type /portal command to manage your
+                subscription.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq6">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="6"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg"
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
+                  >Is payment secure?</span
+                >
+                <div class="relative w-3 h-3">
+                  <div
+                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
+                  ></div>
+                  <div
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                  ></div>
+                </div>
+              </div>
+              <p class="text-slate-300 h-0 py-0 overflow-hidden">
+                We use Lemon Squeezy to handle payments. Lemon Squeezy is a safe
+                and secure payment gateway that is widely used in the industry.
+                <br /><br />
+                We do not store any payment information on our servers. All
+                payment information is handled by Lemon Squeezy.
+              </p>
+            </div>
+            <div data-aos="fade-left" class="faqListElement">
+              <div
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
+              >
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
                   >How can I report an error?</span
                 >
                 <div class="relative w-3 h-3">
@@ -730,28 +872,28 @@
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
               <p class="text-slate-300 h-0 overflow-hidden">
-                If you encounter an error, please
+                If you encounter an error, please report to
                 <a
                   class="underline underline-offset-2"
-                  href="https://x.com/leek531"
-                  >DM a developer on 𝕏</a
-                >. <br /><br />
-                For Telegram users, type /support command to contact our support
-                team.
+                  href="https://t.me/GyuminLee531"
+                  >our Telegram channel</a
+                >
+                and get helps.<br /><br />
+                For Telegram users, type /help command to get more information
+                needed for dealing with your issues.
               </p>
             </div>
-            <div data-aos="fade-left" id="faq7">
+            <div data-aos="fade-left" class="faqListElement">
               <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="7"
+                class="group faqButton flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
               >
-                <span class="text-lg"
+                <span
+                  class="text-lg group-hover:text-slate-300 group-hover:translate-x-2 transition duration-300 ease-in-out"
                   >Who is behind Instashot?</span
                 >
                 <div class="relative w-3 h-3">
@@ -759,55 +901,30 @@
                     class="absolute w-full h-0.5 bg-white top-1/2 left-0"
                   ></div>
                   <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
+                    class="faqPlusStick absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
                   ></div>
                 </div>
               </div>
-              <p class="text-slate-300 h-0 overflow-hidden">
-                Instashot is developed and maintained solely by one person,
-                <a
-                  class="underline underline-offset-2"
-                  href="https://x.com/leek531"
-                >
-                  a founder himself.</a
-                >
+              <p class="text-slate-300 h-0 py-0 overflow-hidden">
+                Instashot is developed and maintained solely by one person, a
+                founder himself.
                 <br /><br />
                 If you have any questions or feedback, please feel free to
-                contact me on 𝕏.
-              </p>
-            </div>
-            <div data-aos="fade-left" id="faq8">
-              <div
-                class="flex justify-between items-center py-4 border-t border-custom1 cursor-pointer"
-                data-faq-index="8"
-              >
-                <span class="text-lg"
-                  >Can I use photo of others?</span
+                contact me
+                <a
+                  class="underline underline-offset-2"
+                  href="https://t.me/GyuminLee531"
+                  >through our Telegram channel</a
                 >
-                <div class="relative w-3 h-3">
-                  <div
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0"
-                  ></div>
-                  <div
-                    id="faqPlusStick"
-                    class="absolute w-full h-0.5 bg-white top-1/2 left-0 transform rotate-90"
-                  ></div>
-                </div>
-              </div>
-              <p class="text-slate-300 h-0 overflow-hidden">
-                While we do not restrict you from using photos of others, we
-                recommend you to use your own photos.
-                <br /><br />
-                Any problems or issues caused by using photos of others are your
-                responsibility.
               </p>
             </div>
           </div>
         </div>
       </main>
       <footer class="w-full p-4 mt-8 flex">
-        <div class="w-full flex flex-col items-center gap-4 md:flex-row justify-between">
+        <div
+          class="w-full flex flex-col items-center gap-4 md:flex-row justify-between"
+        >
           <div class="flex gap-4 items-center">
             <img src="./img/logo.png" class="w-10" />
             <h1 class="text-xl font-light self-center">
@@ -984,47 +1101,56 @@
     fillIntroImages();
     recursiveIntroUpdate(1);
 
-    const addFaqClickEvent = () => {
-      $("[data-faq-index]").click(function () {
-        const idx = $(this).data("faq-index");
-        const target = $(`#faq${idx} p`);
-        if (target.height() == 0) {
-          target.css("height", "auto");
-          const height = target.height();
-          target.css("height", "0");
-          target.animate({ height: height }, 500);
-        } else {
-          target.animate({ height: 0 }, 500);
-        }
-      });
+    var processingClick = false;
 
-      // toggle + and -
-      $("[data-faq-index]").click(function () {
-        const idx = $(this).data("faq-index");
-        $("[data-faq-index]").each(function () {
-          if ($(this).data("faq-index") == idx) {
-            const target = $(`#faq${$(this).data("faq-index")} #faqPlusStick`);
-            if (target.css("transform") == "matrix(0, 1, -1, 0, 0, 0)") {
-              target.css("transform", "rotate(0deg)");
+    const addFaqClickEvent = () => {
+      $(".faqButton").click(function () {
+        if (processingClick) return;
+        processingClick = true;
+
+        const idx = $(this).parent().index();
+
+        $(".faqListElement").each(function () {
+          var plusStick = $(this).find(".faqPlusStick");
+          if ($(this).index() == idx) {
+            if (plusStick.css("transform") == "matrix(0, 1, -1, 0, 0, 0)") {
+              plusStick.css("transform", "rotate(0deg)");
             } else {
-              target.css("transform", "rotate(90deg)");
+              plusStick.css("transform", "rotate(90deg)");
             }
           } else {
-            const target = $(`#faq${$(this).data("faq-index")} #faqPlusStick`);
-            target.css("transform", "rotate(90deg)");
+            plusStick.css("transform", "rotate(90deg)");
           }
         });
-      });
 
-      // close other faq
-      $("[data-faq-index]").click(function () {
-        const idx = $(this).data("faq-index");
-        $("[data-faq-index]").each(function () {
-          if ($(this).data("faq-index") != idx) {
-            const target = $(`#faq${$(this).data("faq-index")} p`);
-            target.animate({ height: 0 }, 500);
+        $(".faqListElement p").each(function () {
+          if ($(this).parent().index() != idx) {
+            $(this).animate(
+              { height: 0, "padding-top": 0, "padding-bottom": 0 },
+              500
+            );
+          } else {
+            if ($(this).height() == 0) {
+              $(this).animate(
+                {
+                  height: $(this).get(0).scrollHeight + 24,
+                  "padding-top": 8,
+                  "padding-bottom": 16,
+                },
+                500
+              );
+            } else {
+              $(this).animate(
+                { height: 0, "padding-top": 0, "padding-bottom": 0 },
+                500
+              );
+            }
           }
         });
+
+        setTimeout(() => {
+          processingClick = false;
+        }, 500);
       });
     };
 
