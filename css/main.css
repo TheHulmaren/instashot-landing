@@ -27,6 +27,51 @@
   );
 }
 
+.anim-typewriter {
+  animation: blinkTextCursor 700ms infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.gallery-side-shadow {
+  background: rgb(34, 40, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.gallery-row {
+  animation: infinite-scroll-horizontal 40s linear infinite;
+}
+
+.gallery-row-reverse {
+  animation: infinite-scroll-horizontal-reverse 40s linear infinite;
+}
+
+@keyframes infinite-scroll-horizontal {
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+@keyframes infinite-scroll-horizontal-reverse {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
