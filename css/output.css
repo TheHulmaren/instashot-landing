@@ -3402,6 +3402,11 @@ video {
     padding: 0px;
   }
 
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:text-start {
     text-align: start;
   }
